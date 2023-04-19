@@ -1,0 +1,142 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+      
+}
+
+body {
+    font-family: 'Lato', sans-serif;  
+    line-height: 120%;
+    background-color: #fbfbfb;
+}
+
+footer, header {
+    height: 90px;
+    color: #fbfbfb;
+}
+
+
+p {          
+    font-size: 18px
+    margin: 20px 0 auto; 
+    text-align: center;
+    align-content: center;
+}
+
+.txt-btn, footer {
+    background-color: #af599e;
+}
+.txt-btn {
+    width: 220px;
+    max-width: 300px;
+    height: 2em;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 2em auto;
+    border-radius: 15px;
+    padding: 8px 0;
+}
+
+.txt-btn a, .txt-btn a:visited, .txt-btn a:checked {
+    text-decoration: none;
+    color: white;
+}
+h1, h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+header {
+    color: black;
+    top:0;
+    left: 0;
+    right: 0;
+}
+/*hasta aqui los parametros dados en la consigna*/
+
+.main {
+    background-color: cadetblue;
+    justify-content: space-around;
+    padding-top:15rem;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;    
+}
+
+.container .menu. ul {
+    display: block;
+}
+
+.container .menu, ul li {
+    list-style: none;    
+}
+
+.container .menu, ul li a {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+section {
+    width: 90vw;
+    max-width: 900px;
+    min-height: 100vh;
+    background-color: bisque; /*borrar*/ 
+    border-bottom: solid 2px; /*borrar*/
+    margin: auto;    
+}
+
+.foto {
+    width: 40vw;
+    max-width: 400px;
+    height: 35vh;
+    max-height: 650px;
+    object-fit: cover;
+    border: solid;/*borrar*/
+    margin: 0 auto;
+}
+
+.parrafo1, .parrafo2, .imagenes {
+    width: 60vw;
+    max-width: 600px;
+    height: 35vh;
+    max-height: 650px;
+    border: solid;/*borrar*/
+    align-items: center;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.imagenes {
+    align-content: center;
+    text-align: center;
+}
+.imagen {
+    
+    width: 150px;
+    height: 120px;
+    padding: 2em;
+    margin: auto;
+}
+
+footer {
+    padding-top: 2em;
+}
