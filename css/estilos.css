@@ -14,7 +14,7 @@
 body {
     font-family: 'Lato', sans-serif;  
     line-height: 120%;
-    background-color: #fbfbfb;
+    /*background-color: #fbfbfb;*/
 }
 
 footer, header {
@@ -25,8 +25,9 @@ footer, header {
 
 p {          
     font-size: 18px
+    line-height: 120%;    
     margin: 20px 0 auto; 
-    text-align: center;
+    text-align: justify;
     align-content: center;
 }
 
@@ -61,28 +62,32 @@ h2 {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    max-width: 400px;
     color: black;
-    top:0;
-    left: 0;
-    right: 0;
+    margin auto; 
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+
 }
 /*hasta aqui los parametros dados en la consigna*/
 
-.main {
-    background-color: cadetblue;
-    justify-content: space-around;
-    padding-top:15rem;
-}
 
 .container-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2em;    
+    margin: auto;
 }
 
-.container .menu. ul {
-    display: block;
+.container .menu. ul a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .container .menu, ul li {
@@ -90,17 +95,24 @@ header {
 }
 
 .container .menu, ul li a {
-    display: inline-block;
+    
     text-decoration: none;
     list-style: none;
+    margin-left: 20px;
     
 }
+
+.main {
+    /*background-color: cadetblue;*/
+    justify-content: space-around;
+    padding-top:5rem;
+}
+
 
 section {
     width: 90vw;
     max-width: 900px;
     min-height: 100vh;
-    background-color: bisque; /*borrar*/ 
     border-bottom: solid 2px; /*borrar*/
     margin: auto;    
 }
@@ -108,10 +120,11 @@ section {
 .foto {
     width: 40vw;
     max-width: 400px;
-    height: 35vh;
+    height: 46vh;
     max-height: 650px;
     object-fit: cover;
-    border: solid;/*borrar*/
+    /*border: solid;borrar*/
+    border-radius: 560px;
     margin: 0 auto;
 }
 
@@ -123,20 +136,39 @@ section {
     border: solid;/*borrar*/
     align-items: center;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 2em;
 }
 .imagenes {
     align-content: center;
     text-align: center;
-}
+    align-items: center;
+    margin-top: 2rem;
+    }
+
 .imagen {
-    
-    width: 150px;
-    height: 120px;
-    padding: 2em;
+    background-color: #af599e;
+    color: white;
+    width: 20%;
+    height: 40%;
+    padding: 15px;
     margin: auto;
+    align-items: center;
+
+}
+
+i {
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    font-size: 65px;
+    align-items: center;
+    padding: 15px;
 }
 
 footer {
-    padding-top: 2em;
+    padding-top: 1em;
+    justify-content: center;
+}
+footer p {
+    text-align: center;
 }
