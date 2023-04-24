@@ -7,8 +7,7 @@
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
-      
+    scroll-behavior: smooth;      
 }
 
 body {
@@ -22,9 +21,8 @@ footer, header {
     color: #fbfbfb;
 }
 
-
 p {          
-    font-size: 18px
+    font-size: 18px;
     line-height: 120%;    
     margin: 20px 0 auto; 
     text-align: justify;
@@ -34,6 +32,7 @@ p {
 .txt-btn, footer {
     background-color: #af599e;
 }
+
 .txt-btn {
     width: 220px;
     max-width: 300px;
@@ -51,6 +50,7 @@ p {
     text-decoration: none;
     color: white;
 }
+
 h1, h2 {
     font-size: 36px;
     text-align: center;
@@ -64,56 +64,68 @@ h2 {
 header {
     display: flex;
     flex-direction: row;
-    width: 40vw;
-    max-width: 400px;
+    width: 90vw;
+    max-width: 900px;
     color: black;
-    margin auto; 
+    margin: auto; 
     align-content: center;
     text-align: center;
-    justify-content: center;
-
-}
+     }
 /*hasta aqui los parametros dados en la consigna*/
 
 
 .container-nav {
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 2em;    
+    align-items: center;
+    padding: 1em;    
     margin: auto;
 }
 
-.container .menu. ul a {
+.container-nav .logo {
+    letter-spacing: 5px;
+}
+
+.container-nav .menu ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around;      
 }
 
-.container .menu, ul li {
-    list-style: none;    
+.container-nav .menu ul li {
+    list-style: none;       
 }
 
-.container .menu, ul li a {
-    
+.container-nav .menu ul li a {    
     text-decoration: none;
-    list-style: none;
-    margin-left: 20px;
     
+    margin: auto;
+    padding: 1em;
+    text-decoration: none;       
+}
+
+.container-nav .menu ul li a:visited {
+    text-decoration: none; 
+    color: black;
+}
+
+.container-nav .menu ul li a:hover { 
+    color: white;
+    background-color: #af599e;
 }
 
 .main {
-    /*background-color: cadetblue;*/
     justify-content: space-around;
     padding-top:5rem;
 }
-
 
 section {
     width: 90vw;
     max-width: 900px;
     min-height: 100vh;
-    border-bottom: solid 2px; /*borrar*/
+    /*border-bottom: solid 2px; borrar*/
     margin: auto;    
 }
 
@@ -123,26 +135,32 @@ section {
     height: 46vh;
     max-height: 650px;
     object-fit: cover;
-    /*border: solid;borrar*/
-    border-radius: 560px;
+    border: solid 1.5px #af599e;
+    border-radius: 1000px;
     margin: 0 auto;
 }
 
 .parrafo1, .parrafo2, .imagenes {
     width: 60vw;
     max-width: 600px;
-    height: 35vh;
-    max-height: 650px;
-    border: solid;/*borrar*/
+    height: auto;
     align-items: center;
     margin: 0 auto;
-    padding: 2em;
+    padding: 0 1em;
+    text-indent: 1em;
 }
+
+p + p {
+    text-indent: 1.5em;
+    margin-top: 0 
+}
+
 .imagenes {
     align-content: center;
     text-align: center;
     align-items: center;
     margin-top: 2rem;
+    justify-content: space-around;
     }
 
 .imagen {
@@ -150,19 +168,23 @@ section {
     color: white;
     width: 20%;
     height: 40%;
-    padding: 15px;
+    padding: 5px;
     margin: auto;
-    align-items: center;
-
+    align-items: center;  
+    margin-left: 10px;
+    margin-right: 10px;  
 }
 
-i {
+i  {
     width: 50%;
     height: 40%;
     margin: auto;
     font-size: 65px;
     align-items: center;
-    padding: 15px;
+    text-align: center;
+    /*padding: 15px;*/
+    
+    
 }
 
 footer {
