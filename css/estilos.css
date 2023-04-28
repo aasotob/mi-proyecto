@@ -7,13 +7,13 @@
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;      
+    scroll-behavior: smooth;    
+    color:white;  
 }
-
+/* En esta parte se realizan las configuraciones y reglas establecidas en la consigna*/
 body {
     font-family: 'Lato', sans-serif;  
     line-height: 120%;
-    /*background-color: #fbfbfb;*/
 }
 
 footer, header {
@@ -51,10 +51,15 @@ p {
     color: white;
 }
 
+h1, h2, p {
+    color: #0f0f0f;
+}
+
 h1, h2 {
     font-size: 36px;
     text-align: center;
     margin: 1.5em 0;
+    height: auto;
 }
 
 h2 {
@@ -66,15 +71,19 @@ header {
     flex-direction: row;
     width: 90vw;
     max-width: 900px;
-    color: black;
+    color: #0f0f0f;
     margin: auto; 
     align-content: center;
     text-align: center;
+    justify-content: center;
+    
      }
 /*hasta aqui los parametros dados en la consigna*/
 
-
+/* Configurando el menu de navegación */
 .container-nav {
+    position: fixed;
+    z-index: 1000;
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -82,7 +91,9 @@ header {
     align-items: center;
     padding: 1em;    
     margin: auto;
-}
+    background-color: white;
+    box-shadow: 0px 3px 3px  #af599e;;
+    }
 
 .container-nav .logo {
     letter-spacing: 5px;
@@ -91,24 +102,26 @@ header {
 .container-nav .menu ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;      
+    justify-content: space-evenly;      
 }
 
 .container-nav .menu ul li {
-    list-style: none;       
+    list-style: none; 
+    color: #0f0f0f;      
 }
 
 .container-nav .menu ul li a {    
     text-decoration: none;
-    
     margin: auto;
     padding: 1em;
-    text-decoration: none;       
+    color: #0f0f0f; 
+    transition: all 0.3s linear;   
+    border-radius: 5px;      
 }
 
 .container-nav .menu ul li a:visited {
     text-decoration: none; 
-    color: black;
+    color: #0f0f0f;
 }
 
 .container-nav .menu ul li a:hover { 
@@ -116,23 +129,27 @@ header {
     background-color: #af599e;
 }
 
+/*Hasta aqui llega la configuración del menú de navegación */
+
+/*Con esta regla se pretende centrar los lementos que componen el sitio web*/
 .main {
     justify-content: space-around;
-    padding-top:5rem;
+    padding-top: 3rem;
 }
 
+/* Con esta regla se le dan las dimensiones a las secciones para que sean homogeneas */
 section {
     width: 90vw;
     max-width: 900px;
     min-height: 100vh;
-    /*border-bottom: solid 2px; borrar*/
     margin: auto;    
 }
 
+/* Dandole estilo a la foto de presentación*/
 .foto {
     width: 40vw;
     max-width: 400px;
-    height: 46vh;
+    height: 65vh;
     max-height: 650px;
     object-fit: cover;
     border: solid 1.5px #af599e;
@@ -140,6 +157,7 @@ section {
     margin: 0 auto;
 }
 
+/* Configurando los parrafos*/
 .parrafo1, .parrafo2, .imagenes {
     width: 60vw;
     max-width: 600px;
@@ -148,13 +166,19 @@ section {
     margin: 0 auto;
     padding: 0 1em;
     text-indent: 1em;
+    }
+.parrafo2 {
+    background-color: rgba(175, 89, 158, 0.3); 
+    padding: 0.3em 1em 1em 1em;
 }
 
+/* Con esta regla se coloca sangría en los párrafos*/
 p + p {
     text-indent: 1.5em;
     margin-top: 0 
 }
 
+/* Aqui se sonfigura la sección donde están los íconos de enlaces*/
 .imagenes {
     align-content: center;
     text-align: center;
@@ -166,31 +190,32 @@ p + p {
 .imagen {
     background-color: #af599e;
     color: white;
-    width: 20%;
-    height: 40%;
-    padding: 5px;
-    margin: auto;
-    align-items: center;  
-    margin-left: 10px;
-    margin-right: 10px;  
+    width: 15%;
+    height: 45%;
+    padding: 3px;    
+    align-items: center;
+    text-align: center;  
+    margin-left: 0.5em;
+    margin-right: 0.5em;  
 }
 
 i  {
-    width: 50%;
-    height: 40%;
+    width: 3em;
+    height: 3em;
     margin: auto;
-    font-size: 65px;
-    align-items: center;
-    text-align: center;
-    /*padding: 15px;*/
-    
-    
+    font-size: 3em;      
 }
 
+/* Configurando el footer */
 footer {
-    padding-top: 1em;
+    width: 80vw;
     justify-content: center;
+    margin: auto;
+    
 }
 footer p {
+    color: white;
+    align-items: center;
     text-align: center;
+    padding: 2em 0;
 }
